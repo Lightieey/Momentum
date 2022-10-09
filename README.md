@@ -10,4 +10,6 @@ Simple Web Site
 
 ..To be migrated to TS
 
-보러가기↗️ https://lightieey.github.io/momentum/
+
+## Try It Out ↗️ 
+https://lightieey.github.io/momentum/
