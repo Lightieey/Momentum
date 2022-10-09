@@ -1,4 +1,4 @@
-const API_KEY = "your openweathermap.org API key";
+const API_KEY = "a977523398fb8ab5891c097a87412a93";
 
 const icons = {
     "Thunderstorm": "🌩",
