@@ -1,5 +1,15 @@
 const API_KEY = "a977523398fb8ab5891c097a87412a93";
 
+const icons = {
+    "Thunderstorm": "🌩",
+    "Drizzle": "🌧",
+    "Rain": "🌦",
+    "Snow": "❄️",
+    "Atmosphere": "🌫",
+    "Clear": "☀️",
+    "Clouds": "☁️"
+}
+
 function onGeoOk(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
@@ -8,7 +18,7 @@ function onGeoOk(position) {
         const weather = document.querySelector("#weather span:first-child");
         const city = document.querySelector("#weather span:last-child");
         city.innerText = data.name;
-        weather.innerText =  `${data.weather[0].main} / ${data.main.temp}`;
+        weather.innerText =  `${icons[data.weather[0].main]} ${data.weather[0].main} / ${data.main.temp}°C`;
     });
 }
 

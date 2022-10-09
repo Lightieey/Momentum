@@ -1,6 +1,11 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .hidden {
     display: none;
 }
+
 img {
     position:absolute;
     width:100%;
@@ -10,5 +15,106 @@ img {
     right:0px;
     bottom:0px;
     z-index: -1;
-    opacity:80%;
+    opacity: 90%;
+}
+
+#clock {
+    font-size: 10em;
+    margin-block-start: 1em;
+    margin-block-end: 0.1em;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-input {
+    appearance: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3em;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+    margin-bottom: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.9;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.name-input::placeholder {
+    color: white;
+    opacity: 0.9;
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.name-input:focus,
+.name-input:active,
+.todo-input:focus,
+.todo-input:active {
+  outline: none;
+}
+
+#greeting {
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 1em;
+}
+
+.todo-input {
+    appearance: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.9;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.todo-input::placeholder {
+    color: white;
+    opacity: 0.9;
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+#todo-list {
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px black;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.todo-button {
+    cursor: pointer;
+    font-size: smaller;
+    margin-right: 1em;
+    text-shadow: 2px 2px 2px black;
+}
+
+#weather {
+    color: white;
+    position: absolute;
+    font-style: italic;
+    font-size: 15px;
+    text-align: right;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    text-shadow: 1px 1px 1px black;
 }
