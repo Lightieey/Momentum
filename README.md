@@ -8,8 +8,6 @@ Simple Web Site
 - weather (Geolocation & openweathermap.org)
 
 
-..To be migrated to TS
-
 
 ## Try It Out ↗️ 
 https://lightieey.github.io/momentum/
